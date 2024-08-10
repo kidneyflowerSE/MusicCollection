@@ -47,7 +47,7 @@ const songs = [
     {
         path: 'assets/Star và Sea.mp3',
         displayName: '星辰大海',
-        cover: 'assets/IMG_7551.jpg',
+        cover: 'assets/IMG_7551.JPG',
         artist: '黄霄云',
     },
 ];
