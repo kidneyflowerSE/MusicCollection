@@ -20,10 +20,11 @@ const songs = [
         artist: 'Thanh Hưng',
     },
     {
-        path: 'assets/Tuyết Yêu Thương.mp3',
-        displayName: 'Tuyết Yêu Thương',
+        path: 'assets/Một Triệu Khả Năng.mp3',
+    
+        displayName: '一百万个可能 ',
         cover: 'assets/gen.jpeg',
-        artist: 'H2K',
+        artist: '克丽丝叮',
     },
     {
         path: 'assets/Kyuccondau.mp3',
@@ -98,6 +99,7 @@ function updateProgressBar() {
     const imagePosition = (progressPercent / 100) * progressBarWidth;
 
     progressImage.style.left = `${imagePosition}px`; 
+
 
     const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
     durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(duration % 60)}`;

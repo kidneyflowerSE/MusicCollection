@@ -81,7 +81,7 @@ body{
 h2{
     font-size: 25px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     margin: 10px 0 0;
 }
 
@@ -103,7 +103,7 @@ h3{
 }
 
 .progress{
-    background-color: #e10505;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     position: relative;
     border-radius: 5px;
     height: 100%;
@@ -154,44 +154,8 @@ h3{
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
 
-    .player-img {
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-    }
-
-    .player-controls {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .progress img {
-        height: 20px;
-        top: -12px;
-    }
 }
 
 @media (max-width: 480px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    .fa-solid {
-        font-size: 24px;
-    }
-
-    .play-button {
-        font-size: 36px;
-    }
 }
