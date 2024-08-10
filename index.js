@@ -39,10 +39,10 @@ const songs = [
         artist: 'Hồ Quang Hiếu ft Minh Vương',
     },
     {
-        path: 'assets/Kyuccondau.mp3',
-        displayName: 'Tuyết Yêu Thương',
-        cover: 'assets/6.jpg',
-        artist: 'Hồ Quang Hiếu ft Minh Vương',
+        path: 'assets/Hoa nở sau chia tay.mp3',
+        displayName: '離別開出花',
+        cover: 'assets/IMG_7523@2x2.jpg',
+        artist: '就是南方凱',
     },
 ];
 
