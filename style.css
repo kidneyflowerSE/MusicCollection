@@ -159,9 +159,9 @@ h3{
 
 @media (max-width: 480px) {
     .background {
-        left: -400px;
+        left: -600px;
         filter: grayscale(10%);
-        transform: scale(0.25);
+        transform: scale(0.5);
         
     }
 }

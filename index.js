@@ -44,6 +44,12 @@ const songs = [
         cover: 'assets/IMG_7523@2x2.jpg',
         artist: '就是南方凱',
     },
+    {
+        path: 'assets/Star và Sea.mp3',
+        displayName: '星辰大海',
+        cover: 'assets/IMG_7551.jpg',
+        artist: '黄霄云',
+    },
 ];
 
 let musicIndex = 0;
