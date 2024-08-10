@@ -97,7 +97,7 @@ function updateProgressBar() {
     const progressBarWidth = playerProgress.clientWidth;
     const imagePosition = (progressPercent / 100) * progressBarWidth;
 
-    progressImage.style.left = `${imagePosition}px`; // Di chuyển hình ảnh theo thanh tiến trình
+    progressImage.style.left = `${imagePosition}px`; 
 
     const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
     durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(duration % 60)}`;
