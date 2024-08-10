@@ -15,9 +15,33 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/LaoTamKhoTu.mp3',
-        displayName: 'Lao Tam Kho Tu',
+        displayName: 'Lao Tâm Khổ Tứ',
         cover: 'assets/LMAO6265.jpg',
-        artist: 'Thanh Hung',
+        artist: 'Thanh Hưng',
+    },
+    {
+        path: 'assets/Tuyết Yêu Thương.mp3',
+        displayName: 'Tuyết Yêu Thương',
+        cover: 'assets/gen.jpeg',
+        artist: 'H2K',
+    },
+    {
+        path: 'assets/Kyuccondau.mp3',
+        displayName: 'Ký Ức Còn Đâu',
+        cover: 'assets/4.jpg',
+        artist: 'Hồ Quang Hiếu ft Minh Vương',
+    },
+    {
+        path: 'assets/Kyuccondau.mp3',
+        displayName: 'Ký Ức Còn Đâu',
+        cover: 'assets/5.jpg',
+        artist: 'Hồ Quang Hiếu ft Minh Vương',
+    },
+    {
+        path: 'assets/Kyuccondau.mp3',
+        displayName: 'Ký Ức Còn Đâu',
+        cover: 'assets/6.jpg',
+        artist: 'Hồ Quang Hiếu ft Minh Vương',
     },
 ];
 
@@ -79,6 +103,19 @@ function setProgressBar(e) {
     const clickX = e.offsetX;
     music.currentTime = (clickX / width) * music.duration;
 }
+
+document.addEventListener('keydown', function (e) {
+    if (e.code === 'Space') {
+        e.preventDefault();
+        togglePlay();
+    } else if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        changeMusic(-1); 
+    } else if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        changeMusic(1); 
+    }
+});
 
 playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeMusic(-1));
