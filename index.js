@@ -39,7 +39,7 @@ const songs = [
     },
     {
         path: 'assets/Kyuccondau.mp3',
-        displayName: 'Ký Ức Còn Đâu',
+        displayName: 'Tuyết Yêu Thương',
         cover: 'assets/6.jpg',
         artist: 'Hồ Quang Hiếu ft Minh Vương',
     },
@@ -93,10 +93,17 @@ function updateProgressBar() {
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
 
+    const progressImage = progress.querySelector('img');
+    const progressBarWidth = playerProgress.clientWidth;
+    const imagePosition = (progressPercent / 100) * progressBarWidth;
+
+    progressImage.style.left = `${imagePosition}px`; // Di chuyển hình ảnh theo thanh tiến trình
+
     const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
     durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(duration % 60)}`;
     currentTimeEl.textContent = `${formatTime(currentTime / 60)}:${formatTime(currentTime % 60)}`;
 }
+
 
 function setProgressBar(e) {
     const width = playerProgress.clientWidth;

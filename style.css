@@ -99,15 +99,27 @@ h3{
     margin: 40px 20px 35px;
     height: 6px;
     width: 90%;
+    position: relative;
 }
 
 .progress{
-    background-color: #212121;
+    background-color: #e10505;
+    position: relative;
     border-radius: 5px;
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
 }
+
+.progress img {
+    position: absolute;
+    top: -16px;
+    left: -20px;
+    height: 24px; /* Điều chỉnh kích thước của hình ảnh */
+    width: auto;
+    transition: left 0.1s linear; /* Tạo hiệu ứng chuyển động mượt */
+}
+
 
 .music-duration{
     position: relative;
